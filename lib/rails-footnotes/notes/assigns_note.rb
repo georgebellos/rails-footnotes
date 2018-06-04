@@ -18,7 +18,7 @@ module Footnotes
                           ]
       cattr_accessor :ignored_assigns
       @@ignored_assigns_pattern = /^@_/
-      cattr_accessor :ignored_assigns_pattern, :instance_writter => false
+      cattr_accessor :ignored_assigns_pattern
 
       def initialize(controller)
         @controller = controller
