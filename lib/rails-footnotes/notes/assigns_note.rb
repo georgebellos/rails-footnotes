@@ -16,9 +16,9 @@ module Footnotes
                             :@view_runtime,
                             :@marked_for_same_origin_verification
                           ]
-      cattr_accessor :ignored_assigns
+      cattr_accessor :ignored_assigns, :instance_writer => false
       @@ignored_assigns_pattern = /^@_/
-      cattr_accessor :ignored_assigns_pattern
+      cattr_accessor :ignored_assigns_pattern, :instance_writer => false
 
       def initialize(controller)
         @controller = controller
